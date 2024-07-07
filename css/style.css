@@ -3,6 +3,7 @@
 /*************************/
 
 .header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,7 +24,7 @@
 .main-nav-list {
   list-style: none;
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
   align-items: center;
   justify-content: space-between;
 }
@@ -55,6 +56,28 @@
 .nav-cta:active {
   background-color: var(--color-shade-1);
 }
+
+/*************************/
+/* MOBILE SECTION */
+/*************************/
+
+.btn--mobile-nav {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav--icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.mobile-nav--icon[name="close-outline"] {
+  display: none;
+}
+
 
 /*************************/
 /* HERO SECTION */
@@ -307,6 +330,7 @@
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-item__icon {
@@ -490,7 +514,7 @@
 /*************************/
 
 .section-cta {
-  padding: 4.8rem 0  12.8rem;
+  padding: 4.8rem 0 12.8rem;
 }
 
 .cta {
